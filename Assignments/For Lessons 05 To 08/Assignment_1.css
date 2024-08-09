@@ -1,0 +1,22 @@
+div{
+    width: 500px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+}
+
+.assign-1-shape-1{
+    background-color: hsl(271, 76%, 53%); /* HSL */
+    background-color: rgb(138, 44, 226); /* RGB */
+    background-color: #8a2ce2; /* HEX */
+}
+.assign-1-shape-2{
+    background-color: hsla(271, 76%, 53%, 0.50); /* HSL */
+    background-color: rgb(138, 44, 226 , 0.50); /* RGB */
+    background-color: #8a2ce250; /* HEX */
+}
+.assign-1-shape-3{
+    background-color: hsl(271, 76%, 53%, 0.10); /* HSL */
+    background-color: rgb(138, 44, 226, 0.10); /* RGB */
+    background-color: #8a2ce210; /* HEX */
+}

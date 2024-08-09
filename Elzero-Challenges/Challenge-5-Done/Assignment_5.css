@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: inline-flex;
+  width: 200px;
+  height: 200px;
+  background-color: #eee;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.menu span {
+  display: inline-block;
+  width: 100px;
+  height: 15px;
+  background-color: black;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+.menu .span-1,
+.menu .span-2,
+.menu .span-3 {
+  position: absolute;
+}
+
+.menu .span-1 {
+  top: 50px;
+  left: 0px;
+}
+.menu .span-2 {
+  top: 70px;
+  left: 0px;
+}
+.menu .span-3 {
+  top: 90px;
+  left: 0px;
+}
+
+/* =============== */
+
+.menu:hover {
+  .span-2 {
+    animation: move-1 0.2s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+  }
+  .span-1 {
+    animation: move-2 0.1s linear 0.2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+  }
+  .span-3 {
+    animation: move-3 0.1s linear 0.2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+  }
+}
+
+/* =============== */
+
+@keyframes move-1 {
+  from {
+    top: 70px;
+    left: 0px;
+  }
+  to {
+    top: 70px;
+    left: -150px;
+    opacity: 0;
+  }
+}
+
+@keyframes move-2 {
+  from {
+    top: 50px;
+    left: 0px;
+  }
+  to {
+    top: 70px;
+    transform: rotate(45deg);
+    background-color: red;
+  }
+}
+
+@keyframes move-3 {
+  from {
+    top: 90px;
+    left: 0px;
+  }
+  to {
+    top: 70px;
+    transform: rotate(-45deg);
+    background-color: red;
+  }
+}

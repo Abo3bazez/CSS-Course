@@ -1,0 +1,16 @@
+div {
+    font: 20px Arial,sans-serif !important;
+    border: 0px solid white !important;
+    background-color: #ddd !important;
+    font-weight: bold !important;
+    color: rgba(0, 0, 0, 0) !important; 
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}
+
+div::after {
+    content: "Elzero";
+    color: black !important;
+    margin-left: -80px;
+}

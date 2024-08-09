@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 20px Arial ,sans-serif;
+    font-weight: bold;
+    color: #ff5722;
+    height: 400px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #eeecec;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 50px;
+    box-shadow: 5px 0px 0px 0px #ff5722, -5px 0px 0px 0px #03a9f4;
+}

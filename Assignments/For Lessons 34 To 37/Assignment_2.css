@@ -1,0 +1,35 @@
+div {
+    background-color: #eeeeee;
+    width: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+div::first-letter {
+    visibility: hidden;
+}
+
+div::before {
+    padding: 15px 10px;
+    content: "1";
+    background-color: #3fd6c5;
+    position: absolute;
+    text-align: center;
+    top: 5px;
+    left: -15px;
+    border-radius: 5px;
+}
+
+div::after {
+    content: "";
+    width: 3px;
+    height: 55px;
+    background-color: #3fd6c5;
+    position: absolute;
+    top: 1px;
+    right: -6px;
+    border-radius: 5px;
+}

@@ -1,0 +1,113 @@
+:root {
+  --not-selected-dot: #c9c9c9;
+  ---selected-dot: #3171ff;
+  --border-color: #3171ff;
+  --background-color: #eeeeee;
+  --shadow-color: #c2a6a6;
+  --font-color: #555a5e;
+  --small-font-color: #ad9897;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+.container > div {
+  width: 200px;
+  height: 150px;
+  background-color: white;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px -3px var(--shadow-color),
+    -1px -1px 10px -3px var(--shadow-color);
+}
+
+.container .plan-name {
+  font-weight: bold;
+  color: var(--font-color);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.container .dot {
+  width: 15px;
+  height: 15px;
+  background-color: var(--not-selected-dot);
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.container .discreption {
+  position: absolute;
+  top: 30%;
+  left: 17px;
+}
+
+.container .pricing {
+  position: absolute;
+  bottom: 16px;
+  left: 18px;
+}
+
+.container .discreption .number {
+  font-weight: bold;
+  font-size: 35px;
+  color: var(--font-color);
+}
+
+.container .discreption .unit-tb {
+  font-weight: bold;
+  font-size: 21px;
+  color: var(--font-color);
+}
+
+.container .discreption .unit-gb {
+  position: relative;
+  left: 7px;
+  top: 2px;
+  color: var(--small-font-color);
+  font-size: 14px;
+}
+
+.container .pricing :first-of-type {
+  font-weight: bold;
+  color: var(--font-color);
+  font-size: 18px;
+}
+
+.container .pricing :last-of-type {
+  color: var(--small-font-color);
+  font-size: 15px;
+}
+
+.container > div:hover {
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  .dot {
+    background-color: var(--border-color);
+  }
+}

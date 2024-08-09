@@ -1,0 +1,9 @@
+div {
+    background-color: #a52a2a;
+    max-width: 400px;
+    max-height: 50px;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+}

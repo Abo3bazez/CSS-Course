@@ -1,0 +1,27 @@
+/* Correct
+._user-name {
+}
+
+Correct
+.-user-name {
+}
+
+Wrong
+.1user-name {
+}
+
+Wrong
+.@user-name {
+}
+
+Wrong
+.user@name {
+}
+
+Correct
+._user10name {
+}
+
+Correct
+.u {
+} */

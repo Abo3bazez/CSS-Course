@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 600px;
+  height: 400px;
+  background-color: #cccccc;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.box > :nth-child(1) {
+  width: 100%;
+  height: 200px;
+  background-color: #607d8b;
+}
+.box .lens {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #ededed;
+  position: absolute;
+  left: 26%;
+  box-shadow: 1px 1px 10px 2px #878787, -1px -1px 10px 2px #878787;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .lens > :nth-child(1) {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background-color: #cecece;
+  position: absolute;
+}
+.box .lens > :nth-child(2) {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: #3e3e3e;
+  position: absolute;
+}
+.box .lens > :nth-child(3) {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #358fb6;
+  position: absolute;
+}
+.box .lens > :nth-child(3) > div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #68b8db;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+.box > :nth-child(3) {
+  width: 180px;
+  height: 50px;
+  background-color: #607d8b;
+  position: absolute;
+  top: -50px;
+  left: 220px;
+  border-radius: 100px 100px 5px 5px / 100px 100px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box > :nth-child(3) > :nth-child(1) {
+  width: 100px;
+  height: 30px;
+  background-color: #cccccc;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box > :nth-child(3) > :nth-child(1) > div {
+  width: 40px;
+  height: 13px;
+  background-color: #607d8b;
+  border-radius: 3px;
+}
+.box > :nth-child(4) {
+  width: 80px;
+  height: 20px;
+  background-color: #607d8b;
+  position: absolute;
+  top: -20px;
+  left: 25px;
+  border-radius: 100px 100px 30px 30px;
+  display: flex;
+  justify-content: center;
+}
+.box > :nth-child(4) > div {
+  width: 55px;
+  height: 6px;
+  background-color: red;
+  border-radius: 5px;
+  position: absolute;
+  top: -4px;
+}

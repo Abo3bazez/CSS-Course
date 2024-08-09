@@ -1,0 +1,11 @@
+a {
+    padding: 10px;
+    background-color: #009688;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    border-bottom: solid 4px #00514a;
+    display: inline-block;
+}

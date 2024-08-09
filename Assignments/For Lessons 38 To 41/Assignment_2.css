@@ -1,0 +1,22 @@
+body {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border-top-left-radius: 14px 79px;
+    border-bottom-right-radius: 14px 79px;
+    -webkit-box-shadow: inset 0px 0px 33px 0px #aaaaaa;
+    -moz-box-shadow: inset 0px 0px 33px 0px #aaaaaa;
+    -o-box-shadow: inset 0px 0px 33px 0px #aaaaaa;
+    box-shadow: inset 0px 0px 33px 0px #aaaaaa;
+    border-top-right-radius: 74px;
+    border-bottom-left-radius: 74px;
+}

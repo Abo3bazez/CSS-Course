@@ -1,0 +1,28 @@
+div {
+    counter-reset: my-sec-counter;
+    font: 20px arial, sans-serif;
+}
+
+p {
+    background-color: #eee;
+    border-right: 5px solid red;
+    width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+    position: relative;
+}
+
+p::before {
+    counter-increment: my-sec-counter;
+    content: counter(my-sec-counter);
+    background-color: red;
+    position: absolute;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    top: 0%;
+    left: -60px;
+    width: 20px;
+}
+

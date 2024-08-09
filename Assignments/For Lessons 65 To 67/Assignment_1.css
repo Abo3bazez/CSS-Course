@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 500px;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.blue {
+  background-color: #205ad6;
+  transform: rotate(-7deg);
+  position: absolute;
+}
+
+.red {
+  background-color: #d6202c;
+  transform: rotate(7deg);
+  position: absolute;
+}
+
+.parent-word {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  position: absolute;
+  overlay: 1;
+}
+
+div {
+  width: 300px;
+  height: 200px;
+}

@@ -1,0 +1,36 @@
+*,
+::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 10px 1fr 1fr 10px;
+  grid-template-rows: 1fr 20px;
+  gap: 20px 20px;
+}
+
+.grid div {
+  background-color: rgb(11, 98, 91);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

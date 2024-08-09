@@ -1,0 +1,17 @@
+#root {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.p-one {
+    font-size: 2.5rem;
+}
+
+.p-two {
+    font-size: 2rem;
+
+}
+.p-three {
+    font-size: 1.5rem;
+}

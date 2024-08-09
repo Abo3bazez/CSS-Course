@@ -1,0 +1,46 @@
+.parent {
+    background-color: rgb(198, 185, 185);
+    width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+    font: bold 20px Arial;
+}
+
+.clear {
+    clear: both;
+}
+
+p {
+    float: left;
+    text-align: center;
+    padding: 15px 0;
+    margin: 15px 0 0 15px;
+}
+
+.full-width p {
+    background-color: rgb(0, 255, 0);
+    width: calc(100% - 30px);
+}
+
+.parent-third p {
+    background-color: rgb(234, 255, 0);
+    width: calc((100% - 60px) / 3);
+}
+
+.parent-half p {
+    background-color: rgb(255, 200, 0);
+    width: calc((100% - 45px) / 2);
+}
+
+.parent-quarter p {
+    background-color: rgb(255, 51, 0);
+    margin-bottom: 15px;
+    width: calc((100% - 75px) / 4);
+}
+
+/*
+    Content Width Is: 100%
+    5 Spaces  15px * 5 => 75px From Content Width
+    100% - 75px Available Space
+    4 Elements The Width Is: (100% - 75px) / 4
+*/

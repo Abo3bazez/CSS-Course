@@ -1,0 +1,48 @@
+.parent {
+    background-color: #eeeeee;
+    width: 800px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.parent-third p,
+.parent-half p,
+.parent-quarter p {
+    background-color: #dddddd;
+    float: left;
+}
+
+.full-width {
+    background-color: #dddddd;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.parent-third p {
+    width: calc((100% - 60px) / 3);
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.parent-half p {
+    width: calc((100% - 45px) / 2);
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.parent-quarter p {
+    width: calc((100% - 75px) / 4);
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/*
+    Content Width Is: 100%
+    4 Spaces  15px * 4  => 60px From Content Width
+    100% - 60px Available Space
+    4 Elements The Width Is: (100% - 75px) / 4
+*/

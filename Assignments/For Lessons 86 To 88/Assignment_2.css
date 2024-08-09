@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+div {
+  background-color: #ddd;
+  width: 400px;
+  height: 50px;
+  padding: 20px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  border-color: #ddd transparent transparent transparent;
+  border-style: solid;
+  border-width: 15px;
+}
+
+.top.arrow::after {
+  top: 2px;
+  transform: rotate(180deg);
+  margin-left: -35px;
+}
+
+.right.arrow::after {
+  top: 120px;
+  right: 301px;
+  transform: rotate(270deg);
+}
+
+.bottom.arrow::after {
+  top: 240px;
+  margin-left: -35px;
+}
+
+.left.arrow::after {
+  top: 281px;
+  left: 300px;
+  transform: rotate(90deg);
+}

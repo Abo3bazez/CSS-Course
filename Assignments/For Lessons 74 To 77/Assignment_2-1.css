@@ -1,0 +1,77 @@
+/* *,
+::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #eee;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container div {
+  position: absolute;
+}
+
+.container .one {
+  width: 50px;
+  height: 50px;
+  border: 5px rgb(35, 151, 250) solid;
+  animation: loading-spinner 1s linear 0s infinite;
+}
+
+.container .two {
+  width: 65px;
+  height: 65px;
+  border: 5px rgb(145, 203, 30) solid;
+  animation: loading-spinner 1.5s linear 0.2s infinite;
+}
+
+.container .three {
+  width: 80px;
+  height: 80px;
+  border: 5px rgb(0, 0, 0) solid;
+  animation: loading-spinner 2s linear 0.3s infinite;
+}
+
+.container .one,
+.container .two,
+.container .three {
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  animation-play-state: paused;
+}
+
+@keyframes loading-spinner {
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.container div:hover {
+  animation-play-state: running;
+}

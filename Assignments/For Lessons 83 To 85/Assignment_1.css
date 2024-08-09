@@ -1,0 +1,12 @@
+.assign-one {
+  font: 1rem;
+  background-color: burlywood;
+}
+@media print {
+  .assign-one {
+    font-size: 40px;
+    color: red;
+    background-color: aqua;
+    text-align: center;
+  }
+}

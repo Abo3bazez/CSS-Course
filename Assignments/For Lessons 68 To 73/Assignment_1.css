@@ -1,0 +1,22 @@
+.custom-shape {
+  margin: 50px auto;
+  background-color: #ff5a1f;
+  color: #fff;
+  font-size: 3em;
+  font-family: Arial, sans-serif;
+  padding: 20px 50px;
+  width: 400px;
+  height: 250px;
+  clip-path: polygon(
+    49% 10%,
+    100% 0,
+    94% 50%,
+    100% 100%,
+    50% 91%,
+    0 100%,
+    6% 52%,
+    0 0
+  );
+  text-align: center;
+  line-height: 250px;
+}

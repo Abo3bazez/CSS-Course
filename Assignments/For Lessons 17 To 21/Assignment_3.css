@@ -1,0 +1,20 @@
+.one,
+.two,
+.three {
+    width: 400px;
+    background-color: #ccc;
+    margin: 10px auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.two {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.three {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

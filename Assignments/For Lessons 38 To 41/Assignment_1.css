@@ -1,0 +1,41 @@
+body {
+    counter-reset: my-sec-counter;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+    display: inline-block;
+    background-color: #eee;
+    font: 20px arial, sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 52px;
+    position: relative;
+    -webkit-box-shadow: 5px 5px 0px 0px #2196f3, -5px -5px 0px 0px #e91e63;
+    -moz-box-shadow: 5px 5px 0px 0px #2196f3, -5px -5px 0px 0px #e91e63;
+    -o-box-shadow: 5px 5px 0px 0px #2196f3, -5px -5px 0px 0px #e91e63;
+    box-shadow: 5px 5px 0px 0px #2196f3, -5px -5px 0px 0px #e91e63;
+}
+
+div::before {
+    counter-increment: my-sec-counter;
+    content: counter(my-sec-counter);
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    position: absolute;
+    top: -12px;
+    right: 39px;
+}
+
+div::after {
+    content: "Element";
+    position: absolute;
+    top: 40%;
+    right: 19px;
+    font-size: 16px;
+}

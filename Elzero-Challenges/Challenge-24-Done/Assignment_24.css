@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primery-color-1: #0076fd;
+  --primery-color-2: #f39d0a;
+  --primery-color-3: #21c45b;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+
+.container {
+  width: 600px;
+  height: 240px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  margin-top: 50px;
+  box-shadow: 1px 1px 5px -2px #818288, -1px -1px 5px -2px #818288;
+}
+
+.container .name {
+  font-size: 13px;
+  color: #818288;
+  margin-bottom: 5px;
+}
+
+.container .num {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.container > div .bar-container .bar {
+  position: relative;
+}
+
+.container > div .bar-container .bar .rest-of-progress-bar {
+  display: inline-block;
+  height: 5px;
+  background-color: #eee;
+  position: absolute;
+}
+
+.container > div .bar-container .bar .progress-bar {
+  display: inline-block;
+  height: 5px;
+  position: absolute;
+}
+
+.container > .states-1 .bar-container .bar .progress-bar {
+  width: 490px;
+  background-color: var(--primery-color-1);
+}
+.container > .states-1 .bar-container .bar .rest-of-progress-bar {
+  width: 100px;
+  left: 455px;
+}
+.container > .states-2 .bar-container .bar .progress-bar {
+  width: 285px;
+  background-color: var(--primery-color-2);
+}
+.container > .states-2 .bar-container .bar .rest-of-progress-bar {
+  width: 285px;
+  left: 270px;
+}
+.container > .states-3 .bar-container .bar .progress-bar {
+  width: 400px;
+  background-color: var(--primery-color-3);
+}
+.container > .states-3 .bar-container .bar .rest-of-progress-bar {
+  width: 155px;
+  left: 400px;
+}
+.container > div .bar-container .progress-percentage-box {
+  position: relative;
+}
+.container > div .bar-container .progress-percentage-box .progress-percentage {
+  line-height: 20px;
+  width: 35px;
+  height: 20px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  top: -27px;
+  left: 435px;
+  color: white;
+}
+
+.container
+  > .states-1
+  .bar-container
+  .progress-percentage-box
+  .progress-percentage {
+  left: 439px;
+  background-color: var(--primery-color-1);
+}
+.container
+  > .states-2
+  .bar-container
+  .progress-percentage-box
+  .progress-percentage {
+  left: 255px;
+  background-color: var(--primery-color-2);
+}
+.container
+  > .states-3
+  .bar-container
+  .progress-percentage-box
+  .progress-percentage {
+  left: 384px;
+  background-color: var(--primery-color-3);
+}
+
+.container > div .bar-container .progress-percentage-box .arrow {
+  width: 0;
+  border: 5px solid;
+  position: absolute;
+  top: -7px;
+}
+
+.container > .states-1 .bar-container .progress-percentage-box .arrow {
+  border-color: var(--primery-color-1) transparent transparent transparent;
+  right: 121px;
+}
+.container > .states-2 .bar-container .progress-percentage-box .arrow {
+  border-color: var(--primery-color-2) transparent transparent transparent;
+  right: 305px;
+}
+.container > .states-3 .bar-container .progress-percentage-box .arrow {
+  border-color: var(--primery-color-3) transparent transparent transparent;
+  right: 175px;
+}

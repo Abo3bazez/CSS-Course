@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Hover Effect</title>
+    <style>
+      table {
+        width: 600px;
+        height: 350px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        border-spacing: 2px;
+        margin: 20px auto;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        border: 1px solid #c0c0c0;
+      }
+
+      td:hover {
+        color: #2196f3;
+        border-color: #2196f3;
+      }
+
+      /* Custom class to highlight rows and columns */
+      .highlight {
+        background-color: #d3d3d3 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="myTable">
+      <thead>
+        <tr>
+          <th>Language</th>
+          <th>Created By</th>
+          <th>Created Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Python</td>
+          <td>Guido van Rossum</td>
+          <td>1991</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>James Gosling</td>
+          <td>1995</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Brendan Eich</td>
+          <td>1995</td>
+        </tr>
+        <tr>
+          <td>PHP</td>
+          <td>Rasmus Lerdorf</td>
+          <td>1995</td>
+        </tr>
+        <tr>
+          <td>Swift</td>
+          <td>Chris Lattner</td>
+          <td>2014</td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const table = document.getElementById("myTable");
+        const cells = table.getElementsByTagName("td");
+
+        Array.from(cells).forEach((cell) => {
+          cell.addEventListener("mouseover", function () {
+            const row = this.parentElement;
+            const colIndex = this.cellIndex;
+
+            // Highlight the row
+            Array.from(row.cells).forEach((cell) =>
+              cell.classList.add("highlight")
+            );
+
+            // Highlight the column
+            Array.from(table.rows).forEach((row) => {
+              row.cells[colIndex].classList.add("highlight");
+            });
+          });
+
+          cell.addEventListener("mouseout", function () {
+            const row = this.parentElement;
+            const colIndex = this.cellIndex;
+
+            // Remove highlight from the row
+            Array.from(row.cells).forEach((cell) =>
+              cell.classList.remove("highlight")
+            );
+
+            // Remove highlight from the column
+            Array.from(table.rows).forEach((row) => {
+              row.cells[colIndex].classList.remove("highlight");
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

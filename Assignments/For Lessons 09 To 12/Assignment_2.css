@@ -1,0 +1,30 @@
+div{
+    display: block;
+    width: 400px;
+    padding: 5px;
+    margin: 20px;
+    outline-style: solid;
+    outline-width: 10px;
+    outline-color: rgb(238, 238, 238);
+    background-color: rgb(238, 238, 238);
+    font-family: Arial;
+}
+
+.element-element-1{
+    border-left: solid;
+    border-left-color: rgb(233, 30, 99);
+    border-left-width: 4px;
+}
+
+.element-element-2{
+    border-left: solid;
+    border-left-color: rgb(0, 150, 136);
+    border-left-width: 3px;
+    visibility: hidden;
+}
+
+.element-element-3{
+    border-left: solid;
+    border-left-color: rgb(0, 150, 136);
+    border-left-width: 4px;
+}

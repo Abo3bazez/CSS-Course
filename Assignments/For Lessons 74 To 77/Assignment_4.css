@@ -1,0 +1,184 @@
+*,
+::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.box {
+  width: 1540px;
+  height: 1150px;
+  padding: 50px 0px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 150px) 40px repeat(5, 150px);
+  grid-template-rows: repeat(7, 150px);
+  position: relative;
+}
+
+.box div {
+  background-color: #323234;
+}
+
+.one {
+  grid-area: 1 / 2 / 2 / 6;
+}
+
+.two {
+  grid-area: 2 / 2 / 4 / 3;
+}
+
+.three {
+  grid-area: 4 / 2 / 5 / 6;
+}
+
+.four {
+  grid-area: 5 / 2 / 7 / 3;
+}
+
+.five {
+  grid-area: 7 / 2 / 8 / 6;
+}
+
+.six {
+  grid-area: 1 / 7 / 7 / 8;
+}
+
+.seven {
+  grid-area: 7 / 7 / 8 / 11;
+}
+
+span {
+  width: 100px;
+  height: 100px;
+  background-color: #fea604;
+  position: absolute;
+}
+
+.E-cube {
+  left: 625px;
+  top: 75px;
+  opacity: 0;
+  animation: fade-in 0.5s 1.5s, E-move-1 0.5s 2s, E-move-2 0.5s 2.5s,
+    E-move-3 0.5s 3s, E-move-4 0.5s 3.5s, E-move-5 0.5s 4s, E-move-6 0.5s 4.5s,
+    E-move-7 0.5s 5s, E-move-8 0.5s 5.5s, E-move-9 0.5s 6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.L-cube {
+  left: 1265px;
+  top: 975px;
+  animation: L-move-1 0.5s linear, L-move-2 1s 0.5s linear,
+    fade-out 0.5s 1.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes L-move-1 {
+  from {
+    left: 1265px;
+    top: 975px;
+  }
+  to {
+    left: 815px;
+    top: 975px;
+  }
+}
+
+@keyframes L-move-2 {
+  from {
+    left: 815px;
+    top: 975px;
+  }
+  to {
+    left: 815px;
+    top: 75px;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes E-move-1 {
+  to {
+    left: 175px;
+    top: 75px;
+  }
+}
+
+@keyframes E-move-2 {
+  to {
+    left: 175px;
+    top: 525px;
+  }
+}
+
+@keyframes E-move-3 {
+  to {
+    left: 625px;
+    top: 525px;
+  }
+}
+
+@keyframes E-move-4 {
+  to {
+    left: 175px;
+    top: 525px;
+  }
+}
+
+@keyframes E-move-5 {
+  to {
+    left: 175px;
+    top: 975px;
+  }
+}
+
+@keyframes E-move-6 {
+  to {
+    left: 625px;
+    top: 975px;
+  }
+}
+
+@keyframes E-move-7 {
+  to {
+    left: 175px;
+    top: 975px;
+  }
+}
+
+@keyframes E-move-8 {
+  to {
+    left: 175px;
+    top: 75px;
+  }
+}
+
+@keyframes E-move-9 {
+  to {
+    left: 625px;
+    top: 75px;
+  }
+}
