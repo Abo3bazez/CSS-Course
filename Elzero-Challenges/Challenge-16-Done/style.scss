@@ -1,0 +1,51 @@
+@use "reset" ;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table {
+  width: 850px;
+  height: 300px;
+  border: 0px solid #eee;
+  position: relative;
+  caption {
+    background-color: #ccc;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 20px;
+    position: absolute;
+    height: 45px;
+    width: 846px;
+    bottom: -45px;
+  }
+  td {
+    padding: 15px;
+    background-color: white;
+    font-size: 17px;
+  }
+  thead {
+    tr {
+      th {
+        background-color: #ccc;   
+        font-weight: bold;
+        padding: 10px 20px;
+        height: 45px;
+        font-size: 17px;
+      }
+    }
+  }
+  tfoot {
+    font-weight: bold;
+    tr :nth-child(1){
+      background-color: #ffe400;
+    }
+    tr :nth-child(n + 2){
+      background-color: #009aff;
+      color: white;
+    }
+  }
+}

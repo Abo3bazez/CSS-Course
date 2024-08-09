@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url(/Fonts/Roboto_Condensed/static/RobotoCondensed-Medium.ttf);
@@ -10,8 +11,8 @@
 body {
   height: 100vh;
   width: 100vw;
-  font-family: Roboto;
 }
+
 div {
   width: 550px;
   height: 200px;
@@ -19,19 +20,12 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 10px 10px 0 0 red, inset -10px -10px 0 0 red,
-    inset 20px 20px 0 0 blue, inset -20px -20px 0 0 blue,
-    inset 30px 30px 0 0 green, inset -30px -30px 0 0 green,
-    inset 40px 40px 0 0 yellow, inset -40px -40px 0 0 yellow,
-    inset 50px 50px 0 0 cyan, inset -50px -50px 0 0 cyan,
-    inset 60px 60px 0 0 blueviolet, inset -60px -60px 0 0 blueviolet,
-    inset 70px 70px 0 0 mediumspringgreen,
-    inset -70px -70px 0 0 mediumspringgreen, inset 80px 80px 0 0 tomato,
-    inset -80px -80px 0 0 tomato;
+  box-shadow: inset 10px 10px 0 0 red, inset -10px -10px 0 0 red, inset 20px 20px 0 0 blue, inset -20px -20px 0 0 blue, inset 30px 30px 0 0 green, inset -30px -30px 0 0 green, inset 40px 40px 0 0 yellow, inset -40px -40px 0 0 yellow, inset 50px 50px 0 0 cyan, inset -50px -50px 0 0 cyan, inset 60px 60px 0 0 blueviolet, inset -60px -60px 0 0 blueviolet, inset 70px 70px 0 0 mediumspringgreen, inset -70px -70px 0 0 mediumspringgreen, inset 80px 80px 0 0 tomato, inset -80px -80px 0 0 tomato;
   font-size: 20px;
 }
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
