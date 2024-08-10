@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/Elzero-Challenges/Challenge-17/Fonts/Roboto_Condensed/static/RobotoCondensed-Medium.ttf);
+}
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+}
+body div {
+  width: 700px;
+  -moz-column-count: 3;
+       column-count: 3;
+  -moz-column-rule: 2px dashed black;
+       column-rule: 2px dashed black;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  background-color: #eee;
+  padding: 15px 10px;
+  line-height: 20px;
+}/*# sourceMappingURL=style.css.map */

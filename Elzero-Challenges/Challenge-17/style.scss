@@ -1,0 +1,19 @@
+@use "reset";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  div {
+    width: 700px;
+    // height: 100px;
+    column-count: 3;
+    column-rule: 2px dashed black;
+    column-gap: 30px;
+    background-color: #eee;
+    padding: 15px 10px;
+    line-height: 20px;
+  }
+}
+

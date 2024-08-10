@@ -1,0 +1,36 @@
+/* body{
+    background-image: url(../media/Flag_of_Germany.svg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    image will be fixed when scroll
+    background-attachment: fixed;
+    image will not be fixed when scroll
+    background-attachment: scroll;
+    background-size: cover;
+} */
+
+div{
+    /* Top Right Bottom Left */
+    /* 10px 10px 10px 10px */
+
+    /* padding: 10px; */
+    /* padding: 10px 20px 30px 40px; */
+
+    /* padding for bottom  */
+    /* padding: 0 0 10px 0; */
+
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    /* padding dont accept negative values */
+    /* margin accept negative values */
+
+    /* Top Right Bottom Left */
+    /* margin: 20px 20px; */
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
